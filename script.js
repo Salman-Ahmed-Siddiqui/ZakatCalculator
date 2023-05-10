@@ -16,10 +16,10 @@ calculateButton.addEventListener("click", function() {
   const cashMGIFValue = document.getElementById("cashMGIFValue").value;
   const cashPHOFValue = document.getElementById("cashPHOFValue").value;
   const cashBPAValue = document.getElementById("cashBPAValue").value;
-
   //const investmentValue = document.getElementById("investmentValue").value;
+  const investmentValue = document.getElementById("investmentValue").value;
   // Total Wealth for Zakat
-  const totalWealth = parseFloat(goldValue) + parseFloat(silverValue) + parseFloat(cashLAFCValue) + parseFloat(cashMDIBValue) + parseFloat(cashPBValue) + parseFloat(cashMDIPFValue) + parseFloat(cashBCACValue) + parseFloat(cashRMIFValue) + parseFloat(cashMGIFValue) + parseFloat(cashPHOFValue) + parseFloat(cashBPAValue) ;
+  const totalWealth = parseFloat(goldValue) + parseFloat(silverValue) + parseFloat(cashLAFCValue) + parseFloat(cashMDIBValue) + parseFloat(cashPBValue) + parseFloat(cashMDIPFValue) + parseFloat(cashBCACValue) + parseFloat(cashRMIFValue) + parseFloat(cashMGIFValue) + parseFloat(cashPHOFValue) + parseFloat(cashBPAValue) + parseFloat(investmentValue);
   
   // Total AMOUNT TO BE DEDUCTED FROM TOTAL ZAKAH-ABLE WEALTH (I.E. LIABILITIES)
 
@@ -52,7 +52,7 @@ calculateButton.addEventListener("click", function() {
   //const zakatAmount = totalWealth * 0.025;
 
   const resultElement = document.getElementById("result");
-  resultElement.innerText = "Your Zakah Payable Amount is: PKR" + ZakatComputing.toFixed(3);
+  resultElement.innerText = "Your Zakah Payable Amount is: PKR" + ZakatComputing.toFixed(2);
   resultElement.style.display = "block";
 });
 
