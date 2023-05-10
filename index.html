@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zakat Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <div class="zktfrm h1">
+    <h1>Zakat Calculator</h1>
+    
+    <form>
+      
+        <!--  VALUE OF ASSETS ON WHICH ZAKAH HAS TO BE CALCULATED (قابلِ زکٰوۃاثا ثوں کی مالیت)  -->
+        
+       <h3>VALUE OF ASSETS ON WHICH ZAKAH HAS TO BE CALCULATED (قابلِ زکٰوۃاثا ثوں کی مالیت)</h3>
+       
+       <h4>1. Gold(سونا)
+       <P><label for="goldValue">Value of Gold (in grams):</label>
+       
+       <input type="number" id="goldValue" name="goldValue" required></P></h4>
+       <h4>2. Silver(چاندی)
+       <P><label for="silverValue">Value of Silver (in grams):</label>
+      <input type="number" id="silverValue" name="silverValue" required></P></h4>
+      <h4>3. Currency(کرنسی)
+      <P><label for="cashLAFCValue">i-Local and foreign currency</label>
+        
+        <input type="number" id="cashLAFCValue" name="cashLAFCValue" required></P>
+        <label>with current rates.  (ملکی وغیرملکی کرنسی مو جودہ ر یٹ)</label>
+
+      <P><label for="cashMDIBValue">ii-Money deposited in banks</label>
+      <input type="number" id="cashMDIBValue" name="cashMDIBValue" required></P>
+      <label> (excluding interest).  بینکوں میں جمع شدہ رقم (علاوہ سود)</label>
+
+
+      <P><label for="cashPBValue">iii-Prize Bonds all (پرائز بانڈز)</label>
+      <input type="number" id="cashPBValue" name="cashPBValue" required></P>
+      
+      <P><label for="cashMDIPFValue">iv-Money deposited in provident-</label>
+      <input type="number" id="cashMDIPFValue" name="cashMDIPFValue" required></P>
+      <label>  fund. (پراویڈ نٹ فنڈ میں جمع شدہ رقم)</label>
+
+      <P><label for="cashBCACValue">v-Money deposited in committee. </label>
+        <input type="number" id="cashBCACValue" name="cashBCACValue" required></P>
+        <label>  fund.(بی سی اور کمیشن میں جمع شدہ رقم)</label>      
+
+
+      <h4>4. Merchandise (مالِ تجارت)
+
+      <P><label for="cashRMIFValue">Raw materials in factory etc.</label>
+        <input type="number" id="cashRMIFValue" name="cashRMIFValue" required></P>
+        <label> (خام مال فیکٹری وغیرہ میں)</label>  
+
+      <P><label for="cashMGIFValue">Manufactured goods in </label>
+        <input type="number" id="cashMGIFValue" name="cashMGIFValue" required></P>
+        <label>factory/shop etc.(تیار شدہ مال فیکٹری یا دکان وغیرہ میں)</label>  
+
+      <P><label for="cashPHOFValue">Plots, houses or flats for trading.</label>
+        <input type="number" id="cashPHOFValue" name="cashPHOFValue" required></P>
+        <label>(تجارتی پلاٹس، مکان یا فلیٹ).</label>  
+
+
+        <P><label for="cashBPAValue">Business partnership assets on </label>
+        <input type="number" id="cashBPAValue" name="cashBPAValue" required></P>
+        <label>which Zakah is to be calculated.(کاروبار میں شراکت کے قابل زکٰوۃاثاثہ جات).</label>  
+
+        <P><label for="investmentValue">Value of Investments:</label>
+        <input type="number" id="investmentValue" name="investmentValue" required></P></h4>
+
+      <!--  AMOUNT TO BE DEDUCTED FROM TOTAL ZAKAH-ABLE WEALTH (I.E. LIABILITIES) وہ رقم جو مالِ زکوٰۃ سے الگ کرنی ہے   -->
+      
+      <h3>AMOUNT TO BE DEDUCTED FROM TOTAL ZAKAH-ABLE WEALTH (I.E. LIABILITIES) وہ رقم جو مالِ زکوٰۃ سے الگ کرنی ہے </h3>
+      
+      
+      <h4><P><label for="LoanValue">Loan, if any (اگر قرضہ لیا ہواہے)</label>
+      <input type="number" id="LoanValue" name="LoanValue" required></P>
+
+      <P><label for="DIOHSValue">Dues instalments on house, </label>
+      <input type="number" id="DIOHSValue" name="DIOHSValue" required></P>
+      <label>shop, things.(مکان، دکان اشیا ء کی واجب الاداقسطیں)</label>  
+
+
+      <P><label for="RPAOCValue">Remaining payable amount of </label>
+        <input type="number" id="RPAOCValue" name="RPAOCValue" required></P>
+        <label> committee[1](provided that one has already got the total amount of the committee).</label>  
+        <label>(کمیٹی کے بقایاجات جب کےیہ کمیٹی مل چکی ہو)</label>  
+
+      <P><label for="UBValue">Utility bills such as the bills of gas,</label>
+        <input type="number" id="UBValue" name="UBValue" required></P>
+        <label> electricity etc. provided that one has got the bills</label>  
+        <label>(یوٹیلیٹی بلز، بجلی، گیس وغیرہ اگر سال پورا ہونے سے پہلے آچکے ہوں)</label>  
+
+
+
+      <P><label for="PTDValue">Payables to Dealers ( پارٹیوں کی ادائیگیاں )</label>
+      <input type="number" id="PTDValue" name="PTDValue" required></P>
+
+      <P><label for="SValue">Salaries of employees. (ملازمین کی تنخواہیں)</label>
+      <input type="number" id="SValue" name="SValue" required></P>
+
+      <P><label for="UZValue">Unpaid Zakah of the previous year.</label>
+        <input type="number" id="UZValue" name="UZValue" required></P>
+        <label>(گزشتہ سال کی زکٰوۃجو ادا نہ کی گئی ہو)</label>  </h4>
+      <br></br>
+      
+      
+      <p class="submit"><button type="button" id="calculateButton">Calculate Zakat</button></p>
+    </form>
+
+    
+    <div id="result"></div>
+  </div>
+
+
+
+    <script src="Script.js"></script>
+  </body>
+</html>
