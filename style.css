@@ -3,13 +3,21 @@ body {
   font: 18px/30px "Lucida Grande", Jameel Noori Nastaleeq, Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #0ca3d2;
+  justify-content: center;
 }
+
+
+form h3 {
+  display: flex;
+  justify-content: center;
+}
+
 
 .zktfrm {
   position: relative;
   margin: 30px auto;
   padding: 20px 20px 20px;
-  width: 510px;
+  width: 550px;
   background: white;
   border-radius: 3px;
   -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -47,6 +55,8 @@ body {
   -webkit-box-shadow: 0 1px whitesmoke;
   box-shadow: 0 1px whitesmoke;
 }
+
+
 
 .zktfrm p {
   margin: 20px 0 0;
@@ -135,6 +145,20 @@ input[type="number"]:focus, input[type=password]:focus {
   outline-color: #dceefc;
   outline-offset: 0;
 }
+
+label {
+  display: inline-block;
+  width: 300px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  display: inline-block;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
 
 input[type=Button] {
   padding: 0 18px;
